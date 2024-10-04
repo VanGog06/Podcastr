@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Podcastr
+
+SaaS app with AI-powered features like text-to-voice and AI-generated images using Next.js and Convex
 
 ## Getting Started
 
