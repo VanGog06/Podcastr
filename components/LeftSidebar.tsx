@@ -16,24 +16,21 @@ type SidebarLinktype = {
 };
 
 const SidebarLink = memo(
-  ({ label, route, imgURL, isActive }: SidebarLinktype) => {
-    console.log("here...");
-    return (
-      <Link
-        key={label}
-        href={route}
-        className={cn(
-          "flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start",
-          {
-            "bg-nav-focus border-r-4 border-orange-1": isActive,
-          }
-        )}
-      >
-        <Image src={imgURL} alt={label} width={24} height={24} />
-        <p>{label}</p>
-      </Link>
-    );
-  }
+  ({ label, route, imgURL, isActive }: SidebarLinktype) => (
+    <Link
+      key={label}
+      href={route}
+      className={cn(
+        "flex gap-3 items-center py-4 max-lg:px-4 justify-center lg:justify-start",
+        {
+          "bg-nav-focus border-r-4 border-orange-1": isActive,
+        }
+      )}
+    >
+      <Image src={imgURL} alt={label} width={24} height={24} />
+      <p>{label}</p>
+    </Link>
+  )
 );
 
 const LeftSidebar = () => {
